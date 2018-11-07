@@ -1,1 +1,43 @@
 remote_theme: nandothemes/simplest
+
+
+# SEO settings
+title: PluralHaiku
+description: "Brain OS Journal"
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 4
+paginate_path: "/page/:num/"
+comments: true
+
+source: source
+destination: _site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : Ells
+  job      : system host with dissociative identity disorder, pediatric-onset bipolar disorder, and autism
+  bio      : " "
+  thumb    : /images/author.jpg
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
