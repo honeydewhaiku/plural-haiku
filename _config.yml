@@ -1,8 +1,10 @@
+---
+title: PluralHaiku
+layout: post
+---
+
 remote_theme: nandothemes/simplest
 
-
-# SEO settings
-title: PluralHaiku
 description: "Brain OS Journal"
 
 # Build settings
